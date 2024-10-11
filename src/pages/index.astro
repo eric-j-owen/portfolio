@@ -1,19 +1,12 @@
 ---
+import BaseHtmlHead from "../layouts/BaseHtmlHead.layouts.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>Eric Owen</title>
-  </head>
-  <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/projects/">Projects</a>
-    <a href="/contact/">Contact</a>
-    <h1>Eric Owen</h1>
-  </body>
-</html>
+<BaseHtmlHead title="Eric Owen" />
+<body>
+  <a href="/">Home</a>
+  <a href="/about/">About</a>
+  <a href="/projects/">Projects</a>
+  <a href="/contact/">Contact</a>
+  <h1>Eric Owen</h1>
+</body>
