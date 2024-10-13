@@ -1,6 +1,5 @@
 ---
-import BaseHtmlHead from "../components/BaseHtmlHead.astro";
-import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const skills = [
   "Javascript/Typescript",
@@ -11,11 +10,7 @@ const skills = [
 ];
 ---
 
-<BaseHtmlHead title="About | Eric Owen" />
-<body>
-  <Header />
-  <h1>About Me</h1>
-
+<BaseLayout titleHead="About | Eric Owen" titleBody="About Me">
   <h2>
     Lorem ipsum dolor sit amet consectetur a quia, repellendus neque, iusto
     expedita a delectus.
@@ -44,4 +39,4 @@ const skills = [
   <ul>
     {skills.map((item) => <li>{item}</li>)}
   </ul>
-</body>
+</BaseLayout>

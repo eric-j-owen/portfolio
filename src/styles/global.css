@@ -48,3 +48,56 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/*------------------------------*/
+/* nav styles */
+/*------------------------------*/
+
+.expanded {
+  display: none;
+}
+
+.hamburger {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin-block-end: 5px;
+  background-color: black;
+}
+
+.nav-links {
+  width: 100%;
+}
+
+.nav-links a {
+  display: block;
+  text-decoration: none;
+}
+
+.nav-links a:hover,
+a:focus {
+  background-color: #ff9776;
+}
+
+@media screen and (min-width: 36rem) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
