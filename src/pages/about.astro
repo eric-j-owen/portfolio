@@ -1,14 +1,19 @@
 ---
-import BaseHtmlHead from "../layouts/BaseHtmlHead.layouts.astro";
+import BaseHtmlHead from "../components/BaseHtmlHead.astro";
+import Header from "../components/Header.astro";
+
+const skills = [
+  "Javascript/Typescript",
+  "React",
+  "HTML",
+  "CSS",
+  "Express/Node",
+];
 ---
 
 <BaseHtmlHead title="About | Eric Owen" />
 <body>
-  <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/projects/">Projects</a>
-  <a href="/contact/">Contact</a>
-
+  <Header />
   <h1>About Me</h1>
 
   <h2>
@@ -29,4 +34,14 @@ import BaseHtmlHead from "../layouts/BaseHtmlHead.layouts.astro";
     cupiditate et adipisci culpa officia ipsa voluptate sit! Numquam, quisquam
     inventore?
   </p>
+
+  <h3>My Skills</h3>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolor
+    voluptatem iste. Quam animi laborum tempore quas sint, vitae recusandae
+    corporis
+  </p>
+  <ul>
+    {skills.map((item) => <li>{item}</li>)}
+  </ul>
 </body>
