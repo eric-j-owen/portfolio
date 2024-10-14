@@ -26,14 +26,7 @@ const { titleHead, titleBody = "Eric Owen" } = Astro.props;
     <slot />
     <Footer />
     <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelector(".nav-links");
-
-      if (hamburger && navLinks) {
-        hamburger.addEventListener("click", () => {
-          navLinks.classList.toggle("expanded");
-        });
-      }
+      import "../scripts/nav";
     </script>
   </body>
 </html>

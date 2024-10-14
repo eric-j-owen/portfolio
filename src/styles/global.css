@@ -50,54 +50,71 @@ h6 {
 }
 
 /*------------------------------*/
-/* nav styles */
+/* media queries */
 /*------------------------------*/
 
-.expanded {
+.nav-links {
   display: none;
 }
 
-.hamburger {
-  margin: 10px;
-  cursor: pointer;
+.expanded {
+  display: block;
 }
 
+.hamburger:not(.expanded):hover .line:nth-child(1) {
+  transform: translateY(-3px);
+}
+.hamburger:not(.expanded):hover .line:nth-child(2) {
+  transform: translateY(3px);
+}
+
+.hamburger.expanded:hover {
+  transform: scale(1.1);
+}
+
+.expanded .line:nth-child(1) {
+  transform: rotate(45deg) translate(3.5px, 3.5px);
+}
+
+.expanded .line:nth-child(2) {
+  transform: rotate(-45deg) translate(3.5px, -3.5px);
+}
+
+nav {
+  background-color: pink;
+  width: 367px;
+}
+
+.hamburger {
+  padding: 12px;
+  cursor: pointer;
+  max-width: fit-content;
+  user-select: none;
+}
+
+.hamburger.expanded {
+  transition: transform 0.2s ease;
+}
 .hamburger .line {
   display: block;
-  width: 30px;
-  height: 5px;
-  margin-block-end: 5px;
+  width: 24px;
+  height: 2px;
+  margin-block-end: 8px;
   background-color: black;
-}
-
-.nav-links {
-  width: 100%;
+  transition: transform 0.2s ease;
 }
 
 .nav-links a {
   display: block;
   text-decoration: none;
+  width: fit-content;
+  padding: 0 12px 12px 12px;
 }
 
 .nav-links a:hover,
-a:focus {
-  background-color: #ff9776;
+.nav-links a:focus {
+  box-shadow: inset 0 -2px 0 0 coral;
 }
 
 @media screen and (min-width: 36rem) {
-  .nav-links {
-    margin-left: 5em;
-    display: block;
-    position: static;
-    width: auto;
-    background: none;
-  }
-
-  .nav-links a {
-    display: inline-block;
-  }
-
-  .hamburger {
-    display: none;
-  }
 }
