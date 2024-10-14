@@ -1,10 +1,18 @@
+const nav = document.querySelector("nav") as HTMLElement;
 const hamburger = document.querySelector(".hamburger") as HTMLElement;
 const navLinks = document.querySelector(".nav-links") as HTMLElement;
 
 if (hamburger && navLinks) {
+  hamburger.setAttribute("aria-expanded", "false");
+  navLinks.setAttribute("aria-hidden", "true");
+
   hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("expanded");
+    const expanded = hamburger.classList.toggle("expanded");
     navLinks.classList.toggle("expanded");
+    nav.classList.toggle("expanded");
+
+    hamburger.setAttribute("aria-expanded", expanded.toString());
+    navLinks.setAttribute("aria-hidden", (!expanded).toString());
   });
 }
 
