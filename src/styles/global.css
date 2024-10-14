@@ -1,3 +1,7 @@
+/*------------------------------*/
+/* reset */
+/*------------------------------*/
+
 *,
 *::before,
 *::after {
@@ -53,9 +57,9 @@ h6 {
 /* media queries */
 /*------------------------------*/
 
-@media screen and (min-width: 36rem) {
+@media screen and (max-width: 36rem) {
   .nav-links.expanded {
-    max-width: 500px;
+    width: 100vw;
   }
 }
 
@@ -66,18 +70,18 @@ nav {
   align-items: center;
 }
 .nav-links {
-  display: none;
   background-color: pink;
   min-height: 100svh;
-  width: 100vw;
+  width: 50vw;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   z-index: 0;
+  transition: right 0.2s ease;
 }
 
 .nav-links.expanded {
-  display: block;
+  right: 0;
   padding-block-start: 50px;
   padding-inline-start: 30px;
 }
@@ -105,7 +109,7 @@ nav {
   display: block;
   text-decoration: none;
   width: fit-content;
-  padding: 0 12px 12px 12px;
+  padding: 5px;
 }
 
 .nav-links a:hover,
