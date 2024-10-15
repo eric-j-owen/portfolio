@@ -1,12 +1,19 @@
 ---
 import Hamburger from "./Hamburger.astro";
 import NavLinks from "./NavLinks.astro";
+
+const links = [
+  { href: "/portfolio/", text: "Home" },
+  { href: "/portfolio/about/", text: "About" },
+  { href: "/portfolio/projects/", text: "Projects" },
+  { href: "/portfolio/contact/", text: "Contact" },
+];
 ---
 
 <header>
   <nav aria-label="Main navigation">
-    <a href="/" class="home-btn">Eric Owen</a>
+    <a href={links[0].href} class="home-btn">Eric Owen</a>
     <Hamburger />
-    <NavLinks />
+    <NavLinks links={links} />
   </nav>
 </header>
