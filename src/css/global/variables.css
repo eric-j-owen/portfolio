@@ -1,0 +1,15 @@
+:root {
+  /* fonts */
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --fs-large: 5rem;
+  --fs-med: 3.5rem;
+  --fs-small: 2rem;
+  --fs-body: 1.125rem;
+
+  /* colors */
+  --clr-bg: #212529;
+  --clr-secondary: #343a40;
+  --clr-accent: #02c3bd;
+  --clr-txt: #e9ecef;
+}

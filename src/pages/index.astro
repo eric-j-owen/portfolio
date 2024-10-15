@@ -1,7 +1,24 @@
 ---
+import "../css/pages/home.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout titleHead="Eric Owen">
-  <div>content</div>
+<BaseLayout title="Eric Owen">
+  <section class="about">
+    <div class="hero title">
+      <h1>
+        <span class="greeting">Hi, my name is</span>
+        Eric<span>.</span>
+      </h1>
+      <h2>I'm a Full stack web developer</h2>
+    </div>
+    <div class="hero content">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+        assumenda nisi nostrum recusandae aspernatur corporis dolore reiciendis
+        repellendus minima officiis beatae delectus, in possimus. Accusantium
+        alias sunt recusandae animi deleniti.
+      </p>
+    </div>
+  </section>
 </BaseLayout>

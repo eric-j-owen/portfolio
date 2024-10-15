@@ -1,0 +1,23 @@
+@import url("../global/variables.css");
+
+h1 {
+  font-size: var(--fs-med);
+  color: var(--clr-accent);
+}
+
+span {
+  font-size: var(--fs-body);
+  color: var(--clr-txt);
+}
+
+h1 span:nth-child(2) {
+  font-size: var(--fs-med);
+}
+
+h2 {
+  font-size: var(--fs-small);
+}
+
+p {
+  font-size: var(--fs-body);
+}

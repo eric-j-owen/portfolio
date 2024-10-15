@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import "../css/pages/about.css";
 
 const skills = [
   "Javascript/Typescript",
@@ -10,33 +11,27 @@ const skills = [
 ];
 ---
 
-<BaseLayout titleHead="About | Eric Owen" titleBody="About Me">
-  <h2>
-    Lorem ipsum dolor sit amet consectetur a quia, repellendus neque, iusto
-    expedita a delectus.
-  </h2>
-
-  <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
-    assumenda nisi nostrum recusandae aspernatur corporis dolore reiciendis
-    repellendus minima officiis beatae delectus, in possimus. Accusantium alias
-    sunt recusandae animi deleniti.
-  </p>
-
-  <p>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde laudantium
-    dignissimos, eius facere maxime enim esse est laborum perspiciatis
-    cupiditate et adipisci culpa officia ipsa voluptate sit! Numquam, quisquam
-    inventore?
-  </p>
-
-  <h3>My Skills</h3>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolor
-    voluptatem iste. Quam animi laborum tempore quas sint, vitae recusandae
-    corporis
-  </p>
-  <ul>
-    {skills.map((item) => <li>{item}</li>)}
-  </ul>
+<BaseLayout title="About | Eric Owen">
+  <main>
+    <section class="about">
+      <h1>About me</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+        laudantium dignissimos, eius facere maxime enim esse est laborum
+        perspiciatis cupiditate et adipisci culpa officia ipsa voluptate sit!
+        Numquam, quisquam inventore?
+      </p>
+    </section>
+    <section class="skills">
+      <h3>My Skills</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        dolor voluptatem iste. Quam animi laborum tempore quas sint, vitae
+        recusandae corporis
+      </p>
+      <ul>
+        {skills.map((item) => <li>{item}</li>)}
+      </ul>
+    </section>
+  </main>
 </BaseLayout>
