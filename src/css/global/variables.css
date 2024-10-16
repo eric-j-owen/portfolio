@@ -11,5 +11,9 @@
   --clr-bg: #212529;
   --clr-secondary: #343a40;
   --clr-accent: #02c3bd;
+  --clr-light-accent: #daa49a; /* #A5B452 #CFF27E #EF767A 02c3bd */
   --clr-txt: #e9ecef;
+
+  /* spacing */
+  --side-margins: 50px;
 }

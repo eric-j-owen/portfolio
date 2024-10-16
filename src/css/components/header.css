@@ -29,7 +29,6 @@ nav {
 }
 
 .hamburger {
-  padding: 12px;
   cursor: pointer;
   max-width: fit-content;
   user-select: none;
@@ -49,6 +48,11 @@ nav {
   transition: transform 0.2s ease;
 }
 
+.hamburger .line:nth-child(2) {
+  width: 16px;
+  margin-left: auto;
+}
+
 .nav-links a {
   display: block;
   text-decoration: none;
@@ -58,8 +62,8 @@ nav {
 
 .home-btn {
   text-decoration: none;
-  margin-inline-start: 10px;
   color: var(--clr-txt);
+  /* margin-inline-start: var(--side-margins); */
 }
 
 /* ------- animations + psuedo classes ------- */
@@ -92,4 +96,5 @@ nav {
 
 .expanded .line:nth-child(2) {
   transform: rotate(-45deg) translate(3.5px, -3.5px);
+  width: 24px;
 }

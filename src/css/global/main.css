@@ -2,8 +2,16 @@
 
 body {
   font-family: var(--system-ui);
-  max-width: 1600px;
   margin: 0 auto;
   background-color: var(--clr-bg);
   color: var(--clr-txt);
+  margin-inline: var(--side-margins);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
 }
