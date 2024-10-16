@@ -15,5 +15,6 @@
   --clr-txt: #e9ecef;
 
   /* spacing */
-  --side-margins: 50px;
+  --inline-margin: 50px;
+  --block-margin: 16px;
 }
