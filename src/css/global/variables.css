@@ -15,6 +15,6 @@
   --clr-txt: #e9ecef;
 
   /* spacing */
-  --inline-margin: 50px;
+  --inline-margin: clamp(8px, 2vw + 8px, 50px);
   --block-margin: 16px;
 }
