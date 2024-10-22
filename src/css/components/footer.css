@@ -1,19 +1,33 @@
 @import url("../global/variables.css");
 
+.socials-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding-block-end: var(--block-margin);
+}
+.socials-container a {
+  text-decoration: none;
+  color: var(--clr-txt);
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+  font-weight: bold;
+}
+
 .icon-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 14px;
-  padding-block-end: var(--block-margin);
 }
 svg {
   color: var(--clr-txt);
-  opacity: 0.7;
   width: 28px;
   height: auto;
   transition: opacity 0.2s ease;
 }
 
-svg:hover {
+svg:hover,
+a:hover {
   opacity: 1;
 }
